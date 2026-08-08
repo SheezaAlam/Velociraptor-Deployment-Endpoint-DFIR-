@@ -6,13 +6,13 @@ A hands-on lab demonstrating the deployment of Velociraptor across multiple Wind
 
 ---
 
-## 📋 Objective
+##  Objective
 
 Deploy Velociraptor on multiple Windows machines, verify successful client-server communication, execute commands remotely, and test Velociraptor's ability to detect safe, simulated malicious activity in a controlled and non-destructive manner.
 
 ---
 
-## 🖥️ 1. Velociraptor Server Setup
+## 1. Velociraptor Server Setup
 
 Velociraptor was configured as a server on the host machine. The server was initialized and launched successfully, and the web-based Velociraptor console was accessed through the browser.
 
@@ -24,7 +24,7 @@ Once running, the GUI was used to:
 
 ---
 
-## 💻 2. Client Deployment on Windows Machines
+##  2. Client Deployment on Windows Machines
 
 Velociraptor clients were installed on Windows virtual machines. Each client:
 - Was configured with the correct server address
@@ -39,7 +39,7 @@ Four Windows endpoints (`DESKTOP-F57FH34` ×3, `vm-win02`) reported in as **Conn
 
 ---
 
-## ⚙️ 3. Remote Command Execution Test (Hunt Execution)
+##  3. Remote Command Execution Test (Hunt Execution)
 
 To verify that Velociraptor can remotely execute commands, **Server Artifacts** were used via hunts.
 
@@ -85,7 +85,7 @@ This confirmed that:
 
 ---
 
-## 🕵️ 4. Simulated Malicious Behavior Detection
+##  4. Simulated Malicious Behavior Detection
 
 ### 4.1 Fake Malware File Creation (File Detection Test)
 
@@ -173,7 +173,7 @@ Base64-encoded PowerShell commands are commonly used by attackers to:
 
 ---
 
-## ✅ Final Conclusion
+##  Final Conclusion
 
 This task successfully demonstrated the practical use of Velociraptor as an endpoint monitoring and incident response tool. All four Windows machines were connected properly to the Velociraptor server, and remote command execution was verified through simple commands like `ipconfig` and `whoami`, confirming correct client-server communication.
 
@@ -183,7 +183,7 @@ Overall, the results show that Velociraptor is effective in detecting suspicious
 
 ---
 
-## 📁 Repository Structure
+##  Repository Structure
 
 ```
 .
@@ -211,14 +211,14 @@ Overall, the results show that Velociraptor is effective in detecting suspicious
     └── registry-run-key-persistence.png
 ```
 
-## 🛠️ Tools Used
+##  Tools Used
 
 - [Velociraptor](https://docs.velociraptor.app/) — Server + Client
 - VMware Workstation (Windows 10 endpoints)
 - PowerShell
 - Windows Registry Editor (`regedit`)
 
-## 🔍 Artifacts Referenced
+##  Artifacts Referenced
 
 - `Windows.System.Cmdshell`
 - `Windows.Search.FileFinder`
